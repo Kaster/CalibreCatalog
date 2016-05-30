@@ -62,27 +62,7 @@ namespace KasterUtil {
         /// <param name="info"></param>
         public static void Inform(string info, string exceptionDumpFolderPath) {
             if (!string.IsNullOrEmpty(info) && !string.IsNullOrEmpty(exceptionDumpFolderPath)) {
-                //Editor ed = null;
-                try {
-                    //ed = DocUtil.GetEditor();
-                } catch {
-                    //ed = null;
-                }
-                /*
-				if(ed != null) {
-					try {
-						AppUtil.SetDisplayTextScreen(
-							info.Split('\n').Length > 3
-						);
-						ed.WriteMessage(info);
-					} catch {
-						ed = null;
-					}
-				}*/
-
-                if (/*ed == null*/true) {
-                    MessageBox.Show(info.Trim(), "Exception Handler", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                }
+                MessageBox.Show(info.Trim(), "Exception Handler", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 bool error = false;
                 string msg = "";
                 string dumpFolder = System.IO.Path.GetDirectoryName(exceptionDumpFolderPath);
