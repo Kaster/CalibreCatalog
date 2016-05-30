@@ -5,16 +5,65 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalibreCatalog", "CalibreCatalog\CalibreCatalog.csproj", "{C8B59DFF-CE65-4E22-9353-9634C1B74B6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalibreCatalogCommon", "CalibreCatalogCommon\CalibreCatalogCommon.csproj", "{FF33BE05-9BB3-418A-BBEE-B291A6DF3FEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalibreCatalogBusinessLogic", "CalibreCatalogBusinessLogic\CalibreCatalogBusinessLogic.csproj", "{F2EB6D7B-B821-4BB5-B4A6-10772BD4DCBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KasterUtil", "KasterUtil\KasterUtil.csproj", "{A2C0CB74-3A51-4511-BF00-318313582BFD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C} = {84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itextsharp", "..\..\..\..\Source\Repos\itextsharp\src\core\itextsharp.csproj", "{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_woDrawing|Any CPU = Debug_woDrawing|Any CPU
 		Debug|Any CPU = Debug|Any CPU
+		Release_woDrawing|Any CPU = Release_woDrawing|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8B59DFF-CE65-4E22-9353-9634C1B74B6C}.Debug_woDrawing|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B59DFF-CE65-4E22-9353-9634C1B74B6C}.Debug_woDrawing|Any CPU.Build.0 = Debug|Any CPU
 		{C8B59DFF-CE65-4E22-9353-9634C1B74B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C8B59DFF-CE65-4E22-9353-9634C1B74B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B59DFF-CE65-4E22-9353-9634C1B74B6C}.Release_woDrawing|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B59DFF-CE65-4E22-9353-9634C1B74B6C}.Release_woDrawing|Any CPU.Build.0 = Release|Any CPU
 		{C8B59DFF-CE65-4E22-9353-9634C1B74B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8B59DFF-CE65-4E22-9353-9634C1B74B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF33BE05-9BB3-418A-BBEE-B291A6DF3FEA}.Debug_woDrawing|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF33BE05-9BB3-418A-BBEE-B291A6DF3FEA}.Debug_woDrawing|Any CPU.Build.0 = Debug|Any CPU
+		{FF33BE05-9BB3-418A-BBEE-B291A6DF3FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF33BE05-9BB3-418A-BBEE-B291A6DF3FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF33BE05-9BB3-418A-BBEE-B291A6DF3FEA}.Release_woDrawing|Any CPU.ActiveCfg = Release|Any CPU
+		{FF33BE05-9BB3-418A-BBEE-B291A6DF3FEA}.Release_woDrawing|Any CPU.Build.0 = Release|Any CPU
+		{FF33BE05-9BB3-418A-BBEE-B291A6DF3FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF33BE05-9BB3-418A-BBEE-B291A6DF3FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2EB6D7B-B821-4BB5-B4A6-10772BD4DCBD}.Debug_woDrawing|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2EB6D7B-B821-4BB5-B4A6-10772BD4DCBD}.Debug_woDrawing|Any CPU.Build.0 = Debug|Any CPU
+		{F2EB6D7B-B821-4BB5-B4A6-10772BD4DCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2EB6D7B-B821-4BB5-B4A6-10772BD4DCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2EB6D7B-B821-4BB5-B4A6-10772BD4DCBD}.Release_woDrawing|Any CPU.ActiveCfg = Release|Any CPU
+		{F2EB6D7B-B821-4BB5-B4A6-10772BD4DCBD}.Release_woDrawing|Any CPU.Build.0 = Release|Any CPU
+		{F2EB6D7B-B821-4BB5-B4A6-10772BD4DCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2EB6D7B-B821-4BB5-B4A6-10772BD4DCBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C0CB74-3A51-4511-BF00-318313582BFD}.Debug_woDrawing|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C0CB74-3A51-4511-BF00-318313582BFD}.Debug_woDrawing|Any CPU.Build.0 = Debug|Any CPU
+		{A2C0CB74-3A51-4511-BF00-318313582BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C0CB74-3A51-4511-BF00-318313582BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C0CB74-3A51-4511-BF00-318313582BFD}.Release_woDrawing|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C0CB74-3A51-4511-BF00-318313582BFD}.Release_woDrawing|Any CPU.Build.0 = Release|Any CPU
+		{A2C0CB74-3A51-4511-BF00-318313582BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C0CB74-3A51-4511-BF00-318313582BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Debug_woDrawing|Any CPU.ActiveCfg = Debug_woDrawing|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Debug_woDrawing|Any CPU.Build.0 = Debug_woDrawing|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Release_woDrawing|Any CPU.ActiveCfg = Release_woDrawing|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Release_woDrawing|Any CPU.Build.0 = Release_woDrawing|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

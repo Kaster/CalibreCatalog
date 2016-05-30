@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CalibreCatalog {
-    public partial class Form1 : Form {
-        public Form1() {
+namespace KasterUtil {
+    public partial class OpenDirectoryDialog : Form {
+        public OpenDirectoryDialog() {
             InitializeComponent();
         }
     }

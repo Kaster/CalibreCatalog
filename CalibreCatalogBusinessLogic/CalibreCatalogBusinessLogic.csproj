@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C8B59DFF-CE65-4E22-9353-9634C1B74B6C}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{F2EB6D7B-B821-4BB5-B4A6-10772BD4DCBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CalibreCatalog</RootNamespace>
-    <AssemblyName>CalibreCatalog</AssemblyName>
+    <RootNamespace>CalibreCatalogBusinessLogic</RootNamespace>
+    <AssemblyName>CalibreCatalogBusinessLogic</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,63 +30,31 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\KasterUtil\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CatalogCreator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CatalogCreator.Designer.cs">
-      <DependentUpon>CatalogCreator.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="CalibreXmlParser.cs" />
+    <Compile Include="Facade.cs" />
+    <Compile Include="PdfService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CatalogCreator.resx">
-      <DependentUpon>CatalogCreator.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CalibreCatalogBusinessLogic\CalibreCatalogBusinessLogic.csproj">
-      <Project>{f2eb6d7b-b821-4bb5-b4a6-10772bd4dcbd}</Project>
-      <Name>CalibreCatalogBusinessLogic</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CalibreCatalogCommon\CalibreCatalogCommon.csproj">
-      <Project>{ff33be05-9bb3-418a-bbee-b291a6df3fea}</Project>
+      <Project>{FF33BE05-9BB3-418A-BBEE-B291A6DF3FEA}</Project>
       <Name>CalibreCatalogCommon</Name>
     </ProjectReference>
     <ProjectReference Include="..\KasterUtil\KasterUtil.csproj">
-      <Project>{A2C0CB74-3A51-4511-BF00-318313582BFD}</Project>
+      <Project>{a2c0cb74-3a51-4511-bf00-318313582bfd}</Project>
       <Name>KasterUtil</Name>
     </ProjectReference>
   </ItemGroup>
