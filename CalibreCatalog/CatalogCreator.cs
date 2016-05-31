@@ -49,6 +49,7 @@ namespace CalibreCatalog {
             if (filename != null && filename.Length > 0 && File.Exists(filename)) {
                 try {
                     Facade.Instance.generatePdfCatalog(filename, fieldTargetDirectory.Text);
+                    MessageBox.Show("PDF catalog was created.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 } catch (Exception ex) {
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }

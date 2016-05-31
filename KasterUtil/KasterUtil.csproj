@@ -46,18 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ColumnHeaderFooterUtil.cs" />
-    <Compile Include="Exception\ExceptionHandler.cs" />
     <Compile Include="Exception\BaseException.cs" />
-    <Compile Include="FileUtil.cs" />
-    <Compile Include="KasterLog.cs" />
-    <Compile Include="OpenDirectoryDialog.cs">
+    <Compile Include="Core\FileUtil.cs" />
+    <Compile Include="Log\KasterLog.cs" />
+    <Compile Include="Dialogs\OpenDirectoryDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OpenDirectoryDialog.Designer.cs">
+    <Compile Include="Dialogs\OpenDirectoryDialog.Designer.cs">
       <DependentUpon>OpenDirectoryDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="PdfUtil.cs" />
+    <Compile Include="PDF\PdfUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
