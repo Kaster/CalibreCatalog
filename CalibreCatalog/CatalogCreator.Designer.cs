@@ -23,6 +23,7 @@
         /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalibreCatalog));
             this.fieldXMLFile = new System.Windows.Forms.TextBox();
             this.lblCalibreXMLFile = new System.Windows.Forms.Label();
             this.btnCalibreXMLFile = new System.Windows.Forms.Button();
@@ -121,10 +122,11 @@
             this.Controls.Add(this.btnCalibreXMLFile);
             this.Controls.Add(this.lblCalibreXMLFile);
             this.Controls.Add(this.fieldXMLFile);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCalibreCatalog";
-            this.Text = "Catalog creator";
+            this.Text = "Calibre - Catalog creator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
