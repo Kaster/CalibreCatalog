@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalibreCatalog", "CalibreCatalog\CalibreCatalog.csproj", "{C8B59DFF-CE65-4E22-9353-9634C1B74B6C}"
 EndProject
@@ -10,11 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalibreCatalogBusinessLogic", "CalibreCatalogBusinessLogic\CalibreCatalogBusinessLogic.csproj", "{F2EB6D7B-B821-4BB5-B4A6-10772BD4DCBD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KasterUtil", "KasterUtil\KasterUtil.csproj", "{A2C0CB74-3A51-4511-BF00-318313582BFD}"
-	ProjectSection(ProjectDependencies) = postProject
-		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C} = {84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itextsharp", "..\..\..\..\Source\Repos\itextsharp\src\core\itextsharp.csproj", "{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,16 +51,11 @@ Global
 		{A2C0CB74-3A51-4511-BF00-318313582BFD}.Release_woDrawing|Any CPU.Build.0 = Release|Any CPU
 		{A2C0CB74-3A51-4511-BF00-318313582BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2C0CB74-3A51-4511-BF00-318313582BFD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Debug_woDrawing|Any CPU.ActiveCfg = Debug_woDrawing|Any CPU
-		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Debug_woDrawing|Any CPU.Build.0 = Debug_woDrawing|Any CPU
-		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Release_woDrawing|Any CPU.ActiveCfg = Release_woDrawing|Any CPU
-		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Release_woDrawing|Any CPU.Build.0 = Release_woDrawing|Any CPU
-		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22B3B158-D45B-48D3-ABA1-EE2D36CE1BBA}
 	EndGlobalSection
 EndGlobal
